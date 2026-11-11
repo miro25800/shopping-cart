@@ -20,12 +20,15 @@ class Product:
 # --------------------------------------------
 # 테스트 코드
 # --------------------------------------------
-Products = [
-    Product("무선 이어폰", 89_000, 3),
-    Product("텀블러", 15_000, 10),
-    Product("보조배터리", 32_000, 5),
-    Product("마우스패드", 9_000, 0),
-    Product("USB허브", 30_000, 10)
-]
+# 이 파일을 직접 실행 시켰을 만 코드가 실행 되도록 하는 로직
+# uv run product.py
+if __name__ == "__main__":
+    Products = [
+        Product("무선 이어폰", 89_000, 3),
+        Product("텀블러", 15_000, 10),
+        Product("보조배터리", 32_000, 5),
+        Product("마우스패드", 9_000, 0),
+        Product("USB허브", 30_000, 10)
+    ]
 
-for p in Products: print(p)
+    for p in Products: print(p)
